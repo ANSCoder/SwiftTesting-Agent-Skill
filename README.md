@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ANSCoder/SwiftTesting-Agent-Skill/master/banner.svg" width="100%" />
+  <img src="https://raw.githubusercontent.com/ANSCoder/SwiftTesting-Agent-Skill/master/banner.svg" width="900"/>
 </p>
+
 ![Swift](https://img.shields.io/badge/Swift-6-orange)
 ![AI Agent Skill](https://img.shields.io/badge/AI-Agent%20Skill-blue)
 ![License](https://img.shields.io/badge/license-MIT-green)
