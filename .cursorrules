@@ -1,0 +1,35 @@
+# Swift Testing Rules for Cursor
+
+When generating Swift test files, always use the Swift Testing framework.
+Never use XCTest patterns. Follow these rules exactly.
+
+## Required imports
+- Use `import Testing` — never `import XCTest`
+- Use `@testable import ModuleName` as usual
+
+## Test structure
+- Use `@Suite struct` — never `class XxxTests: XCTestCase`
+- Use `init()` and `deinit` — never `setUp()` or `tearDown()`
+- Mark the whole suite `@MainActor` when testing @MainActor-isolated ViewModels
+
+## Test functions
+- Mark with `@Test` — never prefix with `test`
+- Name descriptively: `func loadsUsersSuccessfully()` not `func testLoadUsers()`
+- Use `async throws` for any test that uses await or can throw
+
+## Assertions
+- Use `#expect(condition)` — never XCTAssert*
+- Use `try #require(optional)` — never XCTUnwrap
+- Use `#expect(throws: ErrorType.self) { }` — never XCTAssertThrowsError
+- Use `Issue.record("msg")` — never XCTFail
+
+## Async
+- Mark async tests `async throws` — never use `expectation(description:)` or `waitForExpectations`
+- Use `await confirmation("label") { confirm in ... }` for callback/notification-based tests
+
+## Parameterized tests
+- Use `@Test(arguments: [...])` — never repeat test methods for multiple inputs
+- Use `@Test(arguments: MyEnum.allCases)` for enum-driven scenarios
+
+## Reference
+See SwiftTesting-Agent-Skill/SKILL.md for full patterns.
