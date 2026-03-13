@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/ANSCoder/SwiftTesting-Agent-Skill/master/banner.svg" width="900"/>
+  <img src="./assets/banner.svg" width="900"/>
 </p>
 
 ![Swift](https://img.shields.io/badge/Swift-6-orange)
@@ -82,26 +82,29 @@ Modern Swift uses the Swift Testing framework. The correct output looks like thi
 
 ## Repo Structure
 
-```
+``` 
 SwiftTesting-Agent-Skill/
-├── SKILL.md                               ← Start here — agent entry point
-├── patterns/
-│   ├── test-functions.md                  ← @Test, @Suite, naming, tags
-│   ├── assertions.md                      ← #expect, #require, throwing
-│   ├── assert-messages.md                 ← When and how to write assertion messages
-│   ├── async-tests.md                     ← async/await, confirmation {}
-│   └── parameterized-tests.md             ← Arguments, combos, Identifiable
-├── anti-patterns/
-│   ├── xctest-leftovers.md                ← What to stop generating
-│   └── common-mistakes.md                 ← Mistakes agents make in Swift Testing
-├── migration/
-│   └── xctest-to-swift-testing.md         ← Full side-by-side migration guide
-└── examples/
-    ├── networking-tests.md                 ← Async URLSession service layer tests
-    ├── viewmodel-tests.md                  ← @MainActor ViewModel tests
-    ├── swiftui-tests.md                    ← @Observable, routing, form validation
-    ├── delegate-tests.md                   ← URLSessionDelegate, CLLocationManagerDelegate
-    └── snapshot-style-tests.md             ← Structural output and state machine tests
+├── assets/
+│   └── banner.svg                          ← Repository banner
+└── swift-testing-skill/
+    ├── SKILL.md                            ← Start here — agent entry point
+    ├── patterns/
+    │   ├── test-functions.md               ← @Test, @Suite, naming, tags
+    │   ├── assertions.md                   ← #expect, #require, throwing
+    │   ├── assert-messages.md              ← When and how to write assertion messages
+    │   ├── async-tests.md                  ← async/await, confirmation {}
+    │   └── parameterized-tests.md          ← Arguments, combos, Identifiable
+    ├── anti-patterns/
+    │   ├── xctest-leftovers.md             ← What to stop generating
+    │   └── common-mistakes.md              ← Mistakes agents make in Swift Testing
+    ├── migration/
+    │   └── xctest-to-swift-testing.md      ← Full side-by-side migration guide
+    └── examples/
+        ├── networking-tests.md             ← Async URLSession service layer tests
+        ├── viewmodel-tests.md              ← @MainActor ViewModel tests
+        ├── swiftui-tests.md                ← @Observable, routing, form validation
+        ├── delegate-tests.md               ← URLSessionDelegate, CLLocationManagerDelegate
+        └── snapshot-style-tests.md         ← Structural output and state machine tests
 ```
 
 ---
@@ -109,10 +112,10 @@ SwiftTesting-Agent-Skill/
 ## How to Use
 
 ### With Claude Code
-Point Claude Code to `SKILL.md` in your project or add this to your `CLAUDE.md`:
+Point Claude Code to `swift-testing-skill/SKILL.md` in your project or add this to your `CLAUDE.md`:
 
 ```
-When writing Swift tests, read SwiftTesting-Agent-Skill/SKILL.md and follow all patterns exactly.
+When writing Swift tests, read swift-testing-skill/SKILL.md and follow all patterns exactly.
 ```
 
 ### With Cursor
@@ -120,12 +123,12 @@ Add to `.cursorrules`:
 
 ```
 When generating Swift test files, use the Swift Testing framework.
-Follow the patterns in SwiftTesting-Agent-Skill/SKILL.md.
+Follow the patterns in swift-testing-skill/SKILL.md.
 Never use XCTestCase, XCTAssert*, or waitForExpectations.
 ```
 
 ### With Codex
-Include `SKILL.md` in your prompt context or repo root.
+Include `swift-testing-skill/SKILL.md` in your prompt context.
 
 ---
 
@@ -139,13 +142,13 @@ Include `SKILL.md` in your prompt context or repo root.
 
 ## Optional Integration
 
-If you use **AsyncGuardKit** for structured async cancellation, see `examples/networking-tests.md` for test patterns that work alongside it.
+If you use **AsyncGuardKit** for structured async cancellation, see `swift-testing-skill/examples/networking-tests.md` for test patterns that work alongside it.
 
 ---
 
 ## Contributing
 
-PRs welcome. If you find a pattern that AI agents consistently get wrong, open an issue or add a file to `anti-patterns/`.
+PRs welcome. If you find a pattern that AI agents consistently get wrong, open an issue or add a file to `swift-testing-skill/anti-patterns/`.
 
 ---
 
