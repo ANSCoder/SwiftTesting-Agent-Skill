@@ -1,107 +1,64 @@
-<svg width="100%" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg">
-<style>
-  @media (prefers-color-scheme: dark) {
-    .bg { fill: #0D0D12; }
-    .panel { fill: #13131A; }
-    .divider { stroke: #1F1F2E; }
-    .title-white { fill: #F2F2F7; }
-    .tagline { fill: #6E6E82; }
-    .badge-bg { fill: #1A1A26; }
-    .badge-border { stroke: #2A2A3E; }
-    .badge-text { fill: #6E6E82; }
-    .row-bg { fill: #0F0F18; }
-    .row-border { stroke: #1F1F2E; }
-    .row-label { fill: #3E3E52; }
-    .keyword { fill: #F05138; }
-    .macro { fill: #BF8AF0; }
-    .async { fill: #5AC8FA; }
-    .sep { stroke: #1F1F2E; }
-  }
-  @media (prefers-color-scheme: light) {
-    .bg { fill: #F2F2F7; }
-    .panel { fill: #FFFFFF; }
-    .divider { stroke: #E0E0EA; }
-    .title-white { fill: #1C1C1E; }
-    .tagline { fill: #6E6E73; }
-    .badge-bg { fill: #EBEBF0; }
-    .badge-border { stroke: #D8D8E0; }
-    .badge-text { fill: #8E8E9E; }
-    .row-bg { fill: #F7F7FA; }
-    .row-border { stroke: #E0E0EA; }
-    .row-label { fill: #C0C0CC; }
-    .keyword { fill: #D63B22; }
-    .macro { fill: #7B5EA7; }
-    .async { fill: #2196A8; }
-    .sep { stroke: #E0E0EA; }
-  }
-  .bg { fill: #0D0D12; }
-  .panel { fill: #13131A; }
-  .title-white { fill: #F2F2F7; }
-  .tagline { fill: #6E6E82; }
-  .badge-bg { fill: #1A1A26; }
-  .badge-text { fill: #6E6E82; }
-  .keyword { fill: #F05138; }
-  .macro { fill: #BF8AF0; }
-  .async { fill: #5AC8FA; }
-  .row-bg { fill: #0F0F18; }
-  .row-label { fill: #3E3E52; }
+<svg width="680" height="200" viewBox="0 0 680 200" xmlns="http://www.w3.org/2000/svg">
 
-  .mono { font-family: ui-monospace, 'SF Mono', 'Menlo', monospace; }
-  .sans { font-family: -apple-system, 'SF Pro Display', sans-serif; }
-</style>
+  <rect width="680" height="200" fill="#0D0D12" rx="10"/>
 
-<rect width="680" height="200" class="bg"/>
+  <rect x="0" y="0" width="5" height="200" fill="#F05138" rx="2"/>
 
-<rect x="0" y="0" width="5" height="200" fill="#F05138"/>
+  <text x="30" y="72" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="30" font-weight="700" letter-spacing="-0.5" fill="#F2F2F7">Swift<tspan fill="#F05138">Testing</tspan></text>
+  <text x="30" y="100" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="22" font-weight="600" fill="#BF8AF0">Agent Skill</text>
 
-<text x="30" y="72" class="mono title-white" font-size="30" font-weight="700" letter-spacing="-0.5">Swift<tspan fill="#F05138">Testing</tspan></text>
-<text x="30" y="104" class="mono title-white" font-size="22" font-weight="600" letter-spacing="-0.3" opacity="0.85">Agent Skill</text>
+  <line x1="30" y1="114" x2="305" y2="114" stroke="#2A2A3E" stroke-width="0.75"/>
 
-<line x1="30" y1="118" x2="300" y2="118" class="sep" stroke-width="0.75"/>
+  <text x="30" y="132" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#6E6E82">Teach AI agents to write modern Swift tests.</text>
+  <text x="30" y="149" font-family="-apple-system,Helvetica,Arial,sans-serif" font-size="12" fill="#6E6E82">Stop generating XCTest. Start generating</text>
+  <text x="30" y="166" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="12">
+    <tspan fill="#BF8AF0">@Test</tspan>
+    <tspan fill="#6E6E82">, </tspan>
+    <tspan fill="#F05138">#expect</tspan>
+    <tspan fill="#6E6E82">, </tspan>
+    <tspan fill="#5AC8FA">async throws</tspan>
+    <tspan fill="#6E6E82">.</tspan>
+  </text>
 
-<text x="30" y="136" class="sans tagline" font-size="12">Teach AI agents to write modern Swift tests.</text>
-<text x="30" y="152" class="sans tagline" font-size="12">Stop generating XCTest. Start generating</text>
-<text x="30" y="168" class="sans" font-size="12"><tspan class="macro">@Test</tspan><tspan class="tagline">, </tspan><tspan class="keyword">#expect</tspan><tspan class="tagline">, </tspan><tspan class="async">async throws</tspan><tspan class="tagline">.</tspan></text>
+  <rect x="30" y="177" width="52" height="17" rx="3" fill="#1A1A26" stroke="#2A2A3E" stroke-width="0.5"/>
+  <text x="56" y="189" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" fill="#6E6E82" text-anchor="middle">Codex</text>
 
-<rect x="30" y="178" width="52" height="16" rx="3" class="badge-bg" stroke-width="0.5" class="badge-border"/>
-<text x="41" y="190" class="mono badge-text" font-size="9.5">Codex</text>
+  <rect x="88" y="177" width="46" height="17" rx="3" fill="#1A1A26" stroke="#2A2A3E" stroke-width="0.5"/>
+  <text x="111" y="189" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" fill="#6E6E82" text-anchor="middle">Cursor</text>
 
-<rect x="88" y="178" width="44" height="16" rx="3" class="badge-bg" stroke-width="0.5"/>
-<text x="97" y="190" class="mono badge-text" font-size="9.5">Cursor</text>
+  <rect x="140" y="177" width="80" height="17" rx="3" fill="#1A1A26" stroke="#2A2A3E" stroke-width="0.5"/>
+  <text x="180" y="189" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" fill="#6E6E82" text-anchor="middle">Claude Code</text>
 
-<rect x="138" y="178" width="76" height="16" rx="3" class="badge-bg" stroke-width="0.5"/>
-<text x="147" y="190" class="mono badge-text" font-size="9.5">Claude Code</text>
+  <rect x="226" y="177" width="54" height="17" rx="3" fill="#1A1A26" stroke="#2A2A3E" stroke-width="0.5"/>
+  <text x="253" y="189" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="9.5" fill="#6E6E82" text-anchor="middle">Copilot</text>
 
-<rect x="220" y="178" width="52" height="16" rx="3" class="badge-bg" stroke-width="0.5"/>
-<text x="228" y="190" class="mono badge-text" font-size="9.5">Copilot</text>
+  <line x1="330" y1="0" x2="330" y2="200" stroke="#1F1F2E" stroke-width="0.75"/>
+  <rect x="330" y="0" width="350" height="200" fill="#13131A"/>
 
-<line x1="330" y1="0" x2="330" y2="200" stroke="#1F1F2E" stroke-width="0.75"/>
+  <rect x="346" y="16" width="318" height="26" rx="5" fill="#0F0F18" stroke="#1F1F2E" stroke-width="0.5"/>
+  <text x="358" y="33" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52">before</text>
+  <text x="490" y="33" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52" text-decoration="line-through">XCTAssertEqual(a, b)</text>
 
-<rect x="330" y="0" width="350" height="200" class="panel"/>
+  <rect x="346" y="48" width="318" height="26" rx="5" fill="#0F0F18" stroke="#1F1F2E" stroke-width="0.5"/>
+  <text x="358" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52">before</text>
+  <text x="490" y="65" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52" text-decoration="line-through">XCTestExpectation()</text>
 
-<rect x="346" y="18" width="318" height="26" rx="5" class="row-bg" stroke-width="0.5" stroke="#1F1F2E"/>
-<text x="358" y="35" class="mono row-label" font-size="10">before  —  xctest</text>
-<text x="500" y="35" class="mono" font-size="10" fill="#3E3E52" text-decoration="line-through">XCTAssertEqual(a, b)</text>
+  <rect x="346" y="80" width="318" height="26" rx="5" fill="#0F0F18" stroke="#1F1F2E" stroke-width="0.5"/>
+  <text x="358" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52">before</text>
+  <text x="490" y="97" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52" text-decoration="line-through">class Tests: XCTestCase</text>
 
-<rect x="346" y="50" width="318" height="26" rx="5" class="row-bg" stroke-width="0.5" stroke="#1F1F2E"/>
-<text x="358" y="67" class="mono row-label" font-size="10">before  —  xctest</text>
-<text x="500" y="67" class="mono" font-size="10" fill="#3E3E52" text-decoration="line-through">XCTestExpectation()</text>
+  <line x1="346" y1="118" x2="660" y2="118" stroke="#2A2A3E" stroke-width="0.75" stroke-dasharray="3 3"/>
 
-<rect x="346" y="82" width="318" height="26" rx="5" class="row-bg" stroke-width="0.5" stroke="#1F1F2E"/>
-<text x="358" y="99" class="mono row-label" font-size="10">before  —  xctest</text>
-<text x="500" y="99" class="mono" font-size="10" fill="#3E3E52" text-decoration="line-through">class Tests: XCTestCase</text>
+  <rect x="346" y="126" width="318" height="22" rx="4" fill="#F05138" fill-opacity="0.1" stroke="#F05138" stroke-width="0.4" stroke-opacity="0.3"/>
+  <text x="358" y="141" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52">after</text>
+  <text x="490" y="141" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#F05138">#expect(a == b)</text>
 
-<line x1="346" y1="120" x2="664" y2="120" stroke="#1F1F2E" stroke-width="0.75" stroke-dasharray="3 3"/>
+  <rect x="346" y="153" width="318" height="22" rx="4" fill="#BF8AF0" fill-opacity="0.08" stroke="#BF8AF0" stroke-width="0.4" stroke-opacity="0.3"/>
+  <text x="358" y="168" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52">after</text>
+  <text x="490" y="168" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#BF8AF0">confirmation { confirm in }</text>
 
-<rect x="346" y="130" width="318" height="20" rx="4" fill="#F05138" opacity="0.08"/>
-<text x="358" y="144" class="mono row-label" font-size="10">after  —  skill applied</text>
-<text x="500" y="144" class="mono keyword" font-size="10">#expect(a == b)</text>
+  <rect x="346" y="176" width="318" height="20" rx="4" fill="#5AC8FA" fill-opacity="0.08" stroke="#5AC8FA" stroke-width="0.4" stroke-opacity="0.3"/>
+  <text x="358" y="190" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#3E3E52">after</text>
+  <text x="490" y="190" font-family="ui-monospace,SFMono-Regular,Menlo,monospace" font-size="10" fill="#5AC8FA">@Suite struct Tests { }</text>
 
-<rect x="346" y="154" width="318" height="20" rx="4" fill="#BF8AF0" opacity="0.07"/>
-<text x="358" y="168" class="mono row-label" font-size="10">after  —  skill applied</text>
-<text x="500" y="168" class="mono macro" font-size="10">confirmation { confirm in }</text>
-
-<rect x="346" y="178" width="318" height="18" rx="4" fill="#5AC8FA" opacity="0.07"/>
-<text x="358" y="191" class="mono row-label" font-size="10">after  —  skill applied</text>
-<text x="500" y="191" class="mono async" font-size="10">@Suite struct Tests { }</text>
 </svg>

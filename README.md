@@ -1,4 +1,7 @@
 ![SwiftTesting-Agent-Skill Banner](./banner.svg)
+![Swift](https://img.shields.io/badge/Swift-6-orange)
+![AI Agent Skill](https://img.shields.io/badge/AI-Agent%20Skill-blue)
+![License](https://img.shields.io/badge/license-MIT-green)
 
 # SwiftTesting-Agent-Skill
 
