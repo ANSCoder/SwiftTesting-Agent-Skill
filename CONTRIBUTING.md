@@ -6,10 +6,10 @@ Thanks for helping improve this Swift Testing skill.
 
 Submit improvements using a pull request (PR). Contributions are most helpful when they add:
 
-- new patterns in `swift-testing-skill/patterns/`
-- new anti-pattern guidance in `swift-testing-skill/anti-patterns/`
-- new realistic examples in `swift-testing-skill/examples/`
-- migration improvements in `swift-testing-skill/migration/`
+- new patterns in `skill/patterns/`
+- new anti-pattern guidance in `skill/anti-patterns/`
+- new realistic examples in `skill/examples/`
+- migration improvements in `skill/migration/`
 
 ## PR expectations
 

@@ -86,7 +86,7 @@ Modern Swift uses the Swift Testing framework. The correct output looks like thi
 SwiftTesting-Agent-Skill/
 ├── assets/
 │   └── banner.svg                          ← Repository banner
-└── swift-testing-skill/
+└── skill/
     ├── SKILL.md                            ← Start here — agent entry point
     ├── patterns/
     │   ├── test-functions.md               ← @Test, @Suite, naming, tags
@@ -112,10 +112,10 @@ SwiftTesting-Agent-Skill/
 ## How to Use
 
 ### With Claude Code
-Point Claude Code to `swift-testing-skill/SKILL.md` in your project or add this to your `CLAUDE.md`:
+Point Claude Code to `skill/SKILL.md` in your project or add this to your `CLAUDE.md`:
 
 ```
-When writing Swift tests, read swift-testing-skill/SKILL.md and follow all patterns exactly.
+When writing Swift tests, read skill/SKILL.md and follow all patterns exactly.
 ```
 
 ### With Cursor
@@ -123,12 +123,12 @@ Add to `.cursorrules`:
 
 ```
 When generating Swift test files, use the Swift Testing framework.
-Follow the patterns in swift-testing-skill/SKILL.md.
+Follow the patterns in skill/SKILL.md.
 Never use XCTestCase, XCTAssert*, or waitForExpectations.
 ```
 
 ### With Codex
-Include `swift-testing-skill/SKILL.md` in your prompt context.
+Include `skill/SKILL.md` in your prompt context.
 
 ---
 
@@ -142,13 +142,13 @@ Include `swift-testing-skill/SKILL.md` in your prompt context.
 
 ## Optional Integration
 
-If you use **AsyncGuardKit** for structured async cancellation, see `swift-testing-skill/examples/networking-tests.md` for test patterns that work alongside it.
+If you use **AsyncGuardKit** for structured async cancellation, see `skill/examples/networking-tests.md` for test patterns that work alongside it.
 
 ---
 
 ## Contributing
 
-PRs welcome. If you find a pattern that AI agents consistently get wrong, open an issue or add a file to `swift-testing-skill/anti-patterns/`.
+PRs welcome. If you find a pattern that AI agents consistently get wrong, open an issue or add a file to `skill/anti-patterns/`.
 
 ---
 
